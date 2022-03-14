@@ -29,7 +29,7 @@
   }
 
 .fontdiv{
-    font-family : custom
+    font-family : 'custom' !important
 }
 html {
     font-size: 100%;
