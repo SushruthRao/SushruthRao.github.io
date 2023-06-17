@@ -56,15 +56,11 @@ body {
     color: var(--text-color);
     text-align: center;
     font-size: 1.25rem;
-    /* First we need to help some browsers along for this to work.
-       Just because a vendor prefix is there, doesn't mean it will
-       work in a browser made by that vendor either, it's just for
-       future-proofing purposes I guess. */
     -o-transition:.4s;
     -ms-transition:.4s;
     -moz-transition:.4s;
     -webkit-transition:.4s;
-    /* ...and now for the proper property */
+    
     transition:.4s;
 }
 
@@ -154,3 +150,67 @@ body {
 .text-padding {
     padding: 39px !important;
 }
+
+
+.card{
+    background-color: black;
+}
+.bg-primary{
+
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    height: 120%;
+    font:inherit;
+    font-size: inherit;
+    color:rgba(0, 0, 0, 0.193);
+    background-color: black;
+
+    
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0);
+    animation: skeww 3s linear infinite;
+    
+  }
+  
+  
+ 
+
+@keyframes skeww{
+    from{
+        rotate: 0;
+    }
+    to{
+        rotate: -10deg;
+    }
+}
+
+
+.img{
+    height: 130%;
+}
+
+
+.f-container {
+    display: flex;
+    background-color: black;
+    bottom: 0;
+  }
+  
+  .f-container > div {
+    position: relative;
+    margin: 20px;
+    bottom: 0;
+    
+    
+    
+  }
+  .container {
+    color: aliceblue;
+     padding: 2px 16px;
+   }
